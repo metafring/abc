@@ -14,7 +14,7 @@ st.markdown("<p>hi</p>", unsafe_allow_html=True)
 # load_dotenv()
 # api_key = os.getenv("OPENAI_API_KEY")
 
-openai.api_key = st.secrets.OPENAI_TOKEN
+api_key = st.secrets.OPENAI_TOKEN
 
 df=pd.read_csv("./data/mackerelsalted.csv", encoding="utf8")
 df = df.rename(columns={df.columns[1]: 'mackerel'})
