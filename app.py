@@ -11,10 +11,12 @@ import streamlit as st
 
 st.markdown("<p>hi</p>", unsafe_allow_html=True)
 
-os.environ["OPENAI_API_KEY"] = "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"
+# os.environ["OPENAI_API_KEY"] = "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"
 
 # load_dotenv()
 # api_key = os.getenv("OPENAI_API_KEY")
+
+api_key = "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"
 
 df=pd.read_csv("./data/mackerelsalted.csv", encoding="utf8")
 df = df.rename(columns={df.columns[1]: 'mackerel'})
